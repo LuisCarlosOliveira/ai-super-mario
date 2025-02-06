@@ -15,17 +15,6 @@ The main objectives of this project were to:
 - **Coin**: The aim is to collect as many coins as possible throughout the level.
 - **Score**: The objective is to finish the level with the highest possible score.
 
-## Installation and Setup
-To run the Super Mario Bros server:
-
-1. Download the VirtualBox VM backup from the provided link on the course's Moodle page.
-2. Import the VM into VirtualBox.
-3. Change network settings to "Bridged Adapter" and select your active network card.
-4. Launch the VM using the password `leiia22`.
-5. Open a terminal instance, run `ifconfig`, and note down the VM's IP address.
-6. Navigate to `~/MarioServer` and execute `python mario-server.py`.
-
-The server will listen for POST requests on port 8080 at the noted IP address on the route `/process`.
 
 ## Usage
 To interact with the server, send a POST request with the `Content-Type: application/json` header and a JSON string in the body with the format specified in the documentation.
